@@ -472,8 +472,9 @@ nav a.active {
   padding: 1px;
   background: linear-gradient(135deg, rgba(82,241,255,0.6), transparent 32%, rgba(85,246,166,0.38));
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+-webkit-mask-composite: xor;
+mask-composite: exclude;
   opacity: 0;
   transition: 0.35s ease;
   pointer-events: none;
@@ -604,7 +605,7 @@ nav a.active {
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   gap: 22px;
 }
 
